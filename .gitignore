@@ -1,1 +1,13 @@
-/test/*.*
+/test/*.py
+# ignorar todos los archivos que terminen en .log
+*.log
+
+# excepto production.log
+!production.log
+
+# ignorar los archivos terminados en .txt dentro de la carpeta doc (pero no sus subdirectorios)
+test/*.txt
+
+# ignorar todos los archivos terminados en .pdf dentro de la carpeta doc y sus subdirectorios
+test/**/*.pdf
+test/**/*.py
